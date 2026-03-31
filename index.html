@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Glass Ledger</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --glass-bg: rgba(255, 255, 255, 0.1);
+            --glass-border: rgba(255, 255, 255, 0.2);
+            --text-color: #ffffff;
+        }
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-gradient);
+            background-attachment: fixed;
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+        }
+        .glass-container {
+            max-width: 800px;
+            background: var(--glass-bg);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+        h1 { font-weight: 600; font-size: 2.5rem; margin-bottom: 10px; border-bottom: 2px solid var(--glass-border); padding-bottom: 10px;}
+        h2 { font-weight: 600; color: #a5b4fc; margin-top: 30px; }
+        p, li { font-weight: 300; opacity: 0.9; }
+        .highlight { color: #818cf8; font-weight: 600; }
+        footer { margin-top: 50px; text-align: center; font-size: 0.8rem; opacity: 0.6; }
+    </style>
+</head>
+<body>
+    <div class="glass-container">
+        <h1>Glass Ledger</h1>
+        <p><strong>Effective Date:</strong> March 31, 2026</p>
+        
+        <p>Welcome to <strong>Glass Ledger</strong>. We take your privacy seriously. This policy explains how we handle your data in accordance with Google Play Developer Policies.</p>
+
+        <h2>1. SMS Permission & Data Access</h2>
+        <p>Glass Ledger is a financial management tool. To provide automated expense tracking, we request <span class="highlight">READ_SMS</span> and <span class="highlight">RECEIVE_SMS</span> permissions.</p>
+        <ul>
+            <li><strong>Usage:</strong> We only access SMS messages from financial institutions (Banks, Credit Cards, UPI).</li>
+            <li><strong>Purpose:</strong> To automatically parse transaction amounts and categories into your local ledger.</li>
+            <li><strong>Privacy:</strong> We <u>do not</u> read personal messages. All SMS parsing happens <strong>locally on your device</strong>. We do not upload your raw SMS data to any server.</li>
+        </ul>
+
+        <h2>2. Data Collection</h2>
+        <p>We collect minimal data to provide our services:</p>
+        <ul>
+            <li><strong>Financial Data:</strong> Stored locally in an encrypted database on your device.</li>
+            <li><strong>Subscription Data:</strong> We use <span class="highlight">RevenueCat</span> to manage your ₹99 Ledger Foundation and ₹30 AI Brain plans. This involves sharing an anonymous User ID with RevenueCat to verify your purchase status.</li>
+            <li><strong>AI Features:</strong> If you subscribe to the AI Brain, transaction descriptions are anonymized and processed to provide financial coaching.</li>
+        </ul>
+
+        <h2>3. Data Sharing</h2>
+        <p>We <strong>NEVER</strong> sell your data. We do not share your financial information with third-party advertisers or data brokers.</p>
+
+        <h2>4. Data Retention & Deletion</h2>
+        <p>Your financial data is yours. If you delete the app, your local database is removed. You can also manually clear your ledger at any time within the app settings.</p>
+
+        <h2>5. Contact Us</h2>
+        <p>If you have questions, contact us at: <span class="highlight">sajidpalagiri1@gmail.com</span></p>
+
+        <footer>
+            &copy; 2026 Sajid Palagiri. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
